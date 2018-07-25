@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+  <!ENTITY appname "Flavr">
+  <!ENTITY company "hashpool">
+  <!ENTITY baseServerUrl "http://192.168.2.5:8000/api/v1/">
+  ]>
+<resources>
+  <string name="app_name">&appname;</string>
+  <string name="app_name_logo">&appname;.</string>
+  <string name="base_server_url">&baseServerUrl;</string>
+
+  <string-array name="categories">
+    <item>Starters</item>
+    <item>Meals</item>
+    <item>Burgers</item>
+    <item>Sandwiches</item>
+    <item>Chinese</item>
+    <item>Ice Cream</item>
+    <item>Chats</item>
+    <item>Beverages</item>
+    <item>Cold Drinks</item>
+    <item>Other</item>
+  </string-array>
+</resources>

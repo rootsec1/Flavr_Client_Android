@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".Activities.MainActivity">
+
+  <android.support.v7.widget.Toolbar
+    android:id="@+id/mainToolbar"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+      android:layout_marginTop="4dp"
+      android:layout_marginBottom="4dp"
+      android:orientation="vertical"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content">
+      <TextView
+        android:fontFamily="@font/patua"
+        android:textColor="@color/colorAccent"
+        android:textSize="28sp"
+        android:text="@string/app_name_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+      <TextView
+        android:id="@+id/mainHotelNameTextView"
+        android:fontFamily="@font/roboto_light"
+        android:textColor="@color/colorTextDark"
+        android:textSize="16sp"
+        android:text="Looking for you"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    </LinearLayout>
+  </android.support.v7.widget.Toolbar>
+
+  <android.support.v4.widget.SwipeRefreshLayout
+    android:id="@+id/mainSwipeRefreshLayout"
+    android:layout_marginTop="8dp"
+    android:layout_below="@id/mainToolbar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.RecyclerView
+      android:id="@+id/mainCategoriesRecyclerView"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+  </android.support.v4.widget.SwipeRefreshLayout>
+
+  <android.support.design.widget.FloatingActionButton
+    android:id="@+id/mainCheckoutFab"
+    android:clickable="true"
+    android:focusable="true"
+    app:rippleColor="@color/colorPrimary"
+    android:src="@drawable/outline_shopping_cart_black_24"
+    android:tint="@android:color/white"
+    app:elevation="10dp"
+    app:fabSize="normal"
+    android:layout_margin="20dp"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentBottom="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+
+</RelativeLayout>
